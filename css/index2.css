@@ -59,6 +59,11 @@ header .hrbox{
 	height: 1080px;
 	background: url(../img/bg.jpg) no-repeat;
 	background-size: 100% 100%;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	
 }
 
 nav h2 {
@@ -126,6 +131,11 @@ nav p {
 	background: url(../img/bg2.jpg) no-repeat;
 	background-size: 100% 100%;
 	overflow: hidden;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	
 }
 .slider-left {
 }
@@ -180,6 +190,11 @@ nav p {
 	height: 1080px;
 	background: url(../img/bg3.jpg) no-repeat;
 	background-size: 100% 100%;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	
 }
 
 .section4 {
@@ -190,6 +205,11 @@ nav p {
 	background: url(../img/bg4.jpg) no-repeat;
 	background-size: 100% 100%;
 	overflow: hidden;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	
 }
 
 .section5 {
@@ -199,6 +219,11 @@ nav p {
 	height: 1080px;
 	background: url(../img/bg5.jpg) no-repeat;
 	background-size: 100% 100%;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	
 }
 .make2,.make3,.make4{
 	z-index: 12;
@@ -212,6 +237,11 @@ nav p {
 	background: url(../img/bgcontect.jpg) no-repeat;
 	background-size: 100% 100%;
 	z-index: 1;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	
 }
 
 .connectus{
