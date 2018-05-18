@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>圆形进度条</title>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/circles.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body style="height: 1500px;">
+		
+		
+		<div class="circle" id="circles-1" style=""></div>
+		
+		
+		
+
+			
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+			var myCircle = Circles.create({
+			  id:                  'circles-1',
+			  radius:              60,
+			  value:               43,
+			  maxValue:            100,
+			  width:               10,
+			  text:                function(value){return  value + '%';},
+			  colors:              ['#D3B6C6', '#4B253A'],
+			  duration:            400,
+			  wrpClass:            'circles-wrp',
+			  textClass:           'circles-text',
+			  valueStrokeClass:    'circles-valueStroke',
+			  maxValueStrokeClass: 'circles-maxValueStroke',
+			  styleWrapper:        true,
+			  styleText:           true
+			});			
+		</script>
+<!--<script>
+	$(function(){
+		$(document).scroll(function(){
+			    if($(document).scrollTop()>10){
+					console.log($(document).scrollTop());
+					$(".circle").css("display","block")
+			      };
+		   });
+});
+</script>		-->
+
+		
+		
+	</body>
+</html>

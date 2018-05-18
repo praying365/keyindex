@@ -10,6 +10,15 @@
 		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index2.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/circles.js" type="text/javascript" charset="utf-8"></script>
+		
+		<style type="text/css">
+			#canvas .circle {
+			display: inline-block;
+			margin: 1em;
+		}
+		</style>
 	</head>
 <body>
 	<div id="index">
@@ -56,7 +65,7 @@
 			</header> <!--header end-->
 			<div class="hrbox">
 				<img class="img-responsive" src="img/hrbg.png"/>
-			</div>	
+			</div>
 		</div> <!--id="header" end-->
 		<div class="section1 ie" data-0="top:0px;position:fixed;transform:translateZ(0); -ms-transform: translateZ(0);"></div>
 		<nav>
@@ -77,15 +86,11 @@
 				</div>
 			
 				<div  class="chart">
-					<span id="">
-						<img src="img/NO1.png"/>
-					</span>
-					<span id="">
-						<img src="img/NO2.png"/>
-					</span>
-					<span id="">
-						<img src="img/NO3.png"/>
-					</span>
+					<div id="canvas">
+						<div style="margin-left: 60px;" class="circle" id="circles-1"></div>
+						<div class="circle" id="circles-2"></div>
+						<div class="circle" id="circles-3"></div>
+					</div>
 				</div>
 			</div>
 			
@@ -183,7 +188,6 @@
 	</div>
 		
 		
-		
 <script src="js/skrollr.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	var s = skrollr.init({
@@ -197,6 +201,93 @@
 
 	});
 </script>
+
+<script>
+		(function() {
+			var canvas = document.getElementById('canvas'),
+				circlesCreated = false;
+
+			function onScroll() {
+				if (!circlesCreated && elementInViewport(canvas)) {
+					circlesCreated = true;
+					createCircles();
+				}
+			}
+
+			function elementInViewport(el) {
+		    var rect = el.getBoundingClientRect();
+		    console.log(rect.left)
+		    return (
+		      rect.top  >= 0 &&
+		      rect.left <= 160
+//		      rect.top  <= 710
+		      
+		    );
+		    
+		    
+		   
+		  }
+
+			function createCircles() {
+				var colors = [
+						['#D3B6C6', '#4B253A'], ['#FCE6A4', '#EFB917'], ['#BEE3F7', '#45AEEA']
+					],
+					circles = [];
+
+				for (var i = 1; i <= colors.length; i++) {
+//					var child = document.getElementById('circles-' + i),
+//						percentage = 31.42 + (i * 9.84),
+
+						circle = Circles.create({
+							id:         'circles-1',
+							value:      87,
+							text:		function(value){return value + '%';},
+							radius:     90,
+							width:      5,
+							colors:     ['#4a4a4c', '#ab5ae5']
+						});
+						
+						circle = Circles.create({
+							id:         'circles-2',
+							value:      80,
+							text:		function(value){return value + '%';},
+							radius:     90,
+							width:      10,
+							colors:     ['#FCE6A4', '#EFB917']
+						});
+						
+						circle = Circles.create({
+							id:         'circles-3',
+							value:      90,
+							text:		function(value){return value + '%';},
+							radius:     90,
+							width:      10,
+							colors:     ['#BEE3F7', '#45AEEA']
+						});
+
+					circles.push(circle);
+				}
+			}
+
+		  window.onscroll = onScroll;
+
+		}
+		
+		
+		)(); 
+
+</script>
+
+
+<!--<script>
+	$(function(){
+		$(document).scroll(function(){
+			    if($(document).scrollTop()>100){
+					alert(1)
+			      };
+		   });
+});
+</script>-->
 
 
 	</body>
