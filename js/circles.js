@@ -153,7 +153,7 @@
           textAlign:  'center',
           width:      '100%',
 //        文字大小
-          fontSize:   30 + 'px',
+          fontSize:   40 + 'px',
 //        文字颜色
           color:"white",
           height:     this._svgSize + 'px',

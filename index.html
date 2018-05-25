@@ -28,8 +28,8 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-3 col-sm-3 col-xs-2">
 						<div class="logo">
-							<span><img src="img/logo.png"/></span>
-							<span class="h1"> 光盐交互</span>
+							<span><a href="index.html"><img src="img/logo.png"/></a></span>
+							<span class="h1"><a href="index.html"> 光盐交互</a></span>
 						</div>
 					</div>
 					<div class="col-lg-8 col-md-9 col-sm-9 col-xs-10">
@@ -37,28 +37,28 @@
 							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
 								<div class="row">
 									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-										<p>首页</p>
+										<p><a href="index.html">首页</a></p>
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-										<p>论坛</p>
+										<p><a href="index.html">论坛</a></p>
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-										<p>商城</p>
+										<p><a href="index.html">商城</a></p>
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-										<p>软件</p>
+										<p><a href="index.html">软件</a></p>
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-										<p>硬件</p>
+										<p><a href="index.html">硬件</a></p>
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-										<p>帮助中心</p>
+										<p><a href="index.html">帮助中心</a></p>
 									</div>
 								</div>
 							</div>
 							
 							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-								<img src="img/market.png"/>
+								<a href="index.html"><img src="img/market.png"/></a>
 							</div>
 						</div>
 					</div>
@@ -88,7 +88,7 @@
 			
 				<div  class="chart">
 					<div id="canvas">
-						<div style="margin-left: 90px; background-image: url(img/circle1.png);" class="circle" id="circles-1"></div>
+						<div style="margin-left: 100px; background-image: url(img/circle1.png);" class="circle" id="circles-1"></div>
 						<div style="background-image: url(img/circle2.png);" class="circle" id="circles-2"></div>
 						<div style="background-image: url(img/cirle3.png);" class="circle" id="circles-3"></div>
 					</div>
@@ -104,40 +104,40 @@
 					<div class="col-lg-10">
 						<h3>智能</h3>
 						<img class="greenine" src="img/greenine.png"/>
-						<p>我们可以提早发布这个项目，但是我们知道我们在制造过程中还有很多工作要做。</p>
+						<p>在游戏场景中，L驱动程序会熄灭非关键按键，照亮常用技能键。</p>
 					</div>
 				</div>
 				
 				<div class="row">
-					<div class="col-lg-2">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						<img class="titlelogo" src="img/title2.png"/>
 					</div>
-					<div class="col-lg-10">
+					<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
 						<h3>颜值</h3>
 						<img class="greenine" src="img/greenine.png"/>
-						<p>我们可以提早发布这个项目，但是我们知道我们在制造过程中还有很多工作要做。</p>
+						<p>“巢”上面每一条弧线都经过无数次的调整来配合你的手，每一条线都希望是能看着有力量但是摸起来顺滑。</p>
 					</div>
 				</div>
 				
 				<div class="row">
-					<div class="col-lg-2">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						<img class="titlelogo" src="img/title3.png"/>
 					</div>
-					<div class="col-lg-10">
-						<h3>舒适</h3>
+					<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+						<h3>高效</h3>
 						<img class="greenine" src="img/greenine.png"/>
-						<p>我们可以提早发布这个项目，但是我们知道我们在制造过程中还有很多工作要做。</p>
+						<p>“巢”的设计适应不同大小的手掌，帮助你更快地打字。</p>
 					</div>
 				</div>
 				
 				<div class="row">
-					<div class="col-lg-2">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						<img class="titlelogo" src="img/title4.png"/>
 					</div>
-					<div class="col-lg-10">
-						<h3>耐用</h3>
+					<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+						<h3>扩展</h3>
 						<img class="greenine" src="img/greenine.png"/>
-						<p>我们可以提早发布这个项目，但是我们知道我们在制造过程中还有很多工作要做。</p>
+						<p>而我们的动态扩展系统用简洁的灯光提示让工作游戏变得更高效。</p>
 					</div>
 				</div>
 			</div>
@@ -230,10 +230,6 @@
 		  }
 
 			function createCircles() {
-				var colors = [
-						['#D3B6C6', '#4B253A'], ['#FCE6A4', '#EFB917'], ['#BEE3F7', '#45AEEA']
-					],
-					circles = [];
 
 
 						circle = Circles.create({
@@ -281,7 +277,7 @@
 	$(function(){
 		$(document).scroll(function(){
 			    if($(document).scrollTop()>100){
-					alert(1)
+					
 			      };
 		   });
 });

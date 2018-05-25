@@ -261,3 +261,9 @@ nav p {
 	padding-left: 1180px;
 	padding-top: 325px;
 }
+
+#header a{
+	color: white;
+	text-decoration: none;
+}
+
