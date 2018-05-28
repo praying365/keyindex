@@ -77,7 +77,8 @@
 		</nav>
 		<!--<div class="nav-key" data-0="width:1600px;top:850px;left:160px;position: fixed;"  data-400="width:1600px;top:450px;left:160px;position: fixed;"  data-600="width:1600px;top:150px;left:160px;position: fixed;" data-750="width:1600px;top:150px;left:160px;position: fixed;"   data-950="width:800px;top:250px;left:600px;position: fixed;" data-1000="width:800px;top:250px;left:600px;position: fixed;" data-1150="width:800px;top:250px;left:160px;position: fixed;"  data-1200="width:800px;top:250px;left:160px;position: fixed;" data-3100="width:800px;top:250px;left:160px;position: fixed;"  data-3200="width:800px;top:250px;left:820px;position: fixed;"  data-3210="width:800px;top:250px;left:820px;position: fixed;" >-->
 		<div class="nav-key" data-0="width:1500px;top:800px;left:210px;position: fixed;"  data-400="width:1500px;top:400px;left:210px;position: fixed;"  data-600="width:1500px;top:100px;left:210px;position: fixed;" data-750="width:1500px;top:100px;left:210px;position: fixed;" data-1600="width:1500px;top:100px;left:210px;position: fixed;" data-1800="width:1500px;top:100px;left:210px;position: fixed;" data-2000="width:800px;top:270px;left:600px;position: fixed;" data-2200="width:800px;top:270px;left:160px;position: fixed;" data-5100="width:800px;top:270px;left:160px;position: fixed;" data-5400="width:800px;top:270px;left:820px;position: fixed;" data-6800="width:800px;top:270px;left:820px;position: fixed;" data-7000="width:600px;top:270px;left:660px;position: fixed;transform:translateZ(0); -ms-transform: translateZ(0);">
-			<img data-0="opacity: 1;" data-3200="opacity: 1;" data-3510="opacity: 1;" data-4710="opacity: 1;" data-4950="opacity: 1;" class="center-block img-responsive" src="img/key1440.png"/>
+			<img id="keyborder" data-0="opacity: 1;" data-3200="opacity: 1;" data-3510="opacity: 1;" data-4710="opacity: 1;" data-4950="opacity: 1;" class="center-block img-responsive" src="img/key1440.png"/>
+			
 		</div>	<!--移动中的键盘-->
 		<div class="section2 ie" data-0="top:1250px;" data-600="top:1250px;" data-1000="top:1250px;" data-1500="top:0px; position:fixed; transform:translateZ(0); -ms-transform: translateZ(0);">
 			
@@ -224,13 +225,10 @@
 //		      rect.top  <= 710
 		      
 		    );
-		    
-		    
-		   
+		      
 		  }
 
 			function createCircles() {
-
 
 						circle = Circles.create({
 							id:         'circles-1',
@@ -259,8 +257,6 @@
 							colors:     ['#4a4a4c', '#45AEEA']
 						});
 
-					circles.push(circle);
-
 			}
 
 		  window.onscroll = onScroll;
@@ -273,15 +269,25 @@
 </script>
 
 
-<!--<script>
+<script>
 	$(function(){
 		$(document).scroll(function(){
-			    if($(document).scrollTop()>100){
-					
-			      };
+				if($(document).scrollTop()>500){
+					document.getElementById("keyborder").src="img/key1440.png";
+			      }; 
+			
+			
+			
+			    if($(document).scrollTop()>1500){
+					document.getElementById("keyborder").src="img/key99.png";
+			      }; 
+			      
+			    if($(document).scrollTop()>3500){
+					document.getElementById("keyborder").src="img/key100.png";
+			      };    
 		   });
 });
-</script>-->
+</script>
 
 
 	</body>
